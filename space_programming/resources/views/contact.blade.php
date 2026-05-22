@@ -1,14 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.contact')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+@section('title', 'Contact')
 
-<body>
-    nav
+@section('content')
     <div>
         <h3>GROUND STATION ADDRESS</h3>
         <p>
@@ -31,6 +25,4 @@
             </div>
         </div>
     </div>
-</body>
-
-</html>
+    @endsection
