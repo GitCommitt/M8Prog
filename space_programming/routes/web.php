@@ -10,5 +10,5 @@ Route::get('/', function () {
 
 Route::get('/contact', [ContactController::class, 'contactView']);
 
-Route::get('/languages', [languageController::class, 'list']);
-Route::get('/languages/{lang}', [languageController::class, 'details']);
+Route::get('/languages', [languageController::class, 'list'])->name("lang");
+Route::get('/languages/{lang}', [languageController::class, 'details'])->name("langdetails");

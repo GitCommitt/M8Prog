@@ -1,0 +1,26 @@
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+header{
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+    gap: 15%;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    align-items: center;
+    width: 100%;
+    margin-top: auto; 
+    padding: 20px 0;
+    background-color: grey;
+}

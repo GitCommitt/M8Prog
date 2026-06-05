@@ -1,17 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=language-details.blade.php, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+<x-layouts.app>
+
+<x-slot name='content'>
     @foreach($languages as $language)
-    <div>
-        <p>{{ $language->name }}</p>
-        <p>{{ $language->iconSvg }}</p>
-        <p>{{ $language->description }}</p>
-    </div>
-@endforeach
-</body>
-</html>
+        <div class="card-laguage">
+            <p>{{ $language->name }}</p>
+            {!! $language->iconSvg !!}
+            <p class="bg">{{ $language->description }}</p>
+            <a href="{{route('langdetails',['lang'=>$language->name]) }}">{{ $language->name }}</a>
+            <x-feature :languages='$languages'></x-feature>
+        </div>
+    @endforeach
+
+</x-slot>
+</x-layouts.app>

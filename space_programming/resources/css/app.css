@@ -9,3 +9,62 @@
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+header{
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+    gap: 15%;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    align-items: center;
+    width: 100%;
+    margin-top: auto; 
+    padding: 20px 0;
+    background-color: grey;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.card-laguage{
+    background-color: rgb(230, 227, 227);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.features{
+    display: flex;
+    gap: 20px;
+}
+
+.feature{
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 30px;
+}

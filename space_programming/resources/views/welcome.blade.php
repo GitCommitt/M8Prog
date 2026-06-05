@@ -1,11 +1,13 @@
-@extends('layouts.app')
 
-@section('title', 'Welcome')
+<x-layouts.app>
 
-@section('content')
+<x-slot name='content'>
+
 <div class="flex items-center justify-center w-full ...">
     <main class="flex ...">
-        Test
+        Test 
             </main>
 </div>
-@endsection
+
+</x-slot>
+</x-layouts.app>
