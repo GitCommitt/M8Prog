@@ -1,0 +1,1 @@
+<a href="{{ $routeName }}" class="{{ $classKnop }}">Home</a>
